@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 183</value>
+    <value>111, 225</value>
   </data>
   <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -141,13 +141,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="txtBackupFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 45</value>
+    <value>111, 88</value>
   </data>
   <data name="txtBackupFolderPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 23</value>
+    <value>538, 23</value>
   </data>
   <data name="txtBackupFolderPath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -162,14 +162,14 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtBackupFolderPath.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSelectBackupFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnSelectBackupFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>615, 45</value>
+    <value>655, 88</value>
   </data>
   <data name="btnSelectBackupFolder.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -190,16 +190,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSelectBackupFolder.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
-  <data name="timerBackup.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="timerBackup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
+  </metadata>
   <data name="chkAutoBackup.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkAutoBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 104</value>
+    <value>469, 146</value>
   </data>
   <data name="chkAutoBackup.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 19</value>
@@ -220,10 +220,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkAutoBackup.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="numBackupInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 129</value>
+    <value>469, 171</value>
   </data>
   <data name="numBackupInterval.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 23</value>
@@ -241,13 +241,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numBackupInterval.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="lblBackupInterval.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblBackupInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 131</value>
+    <value>522, 173</value>
   </data>
   <data name="lblBackupInterval.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 15</value>
@@ -268,13 +268,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblBackupInterval.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="lblProfile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblProfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 242</value>
+    <value>10, 284</value>
   </data>
   <data name="lblProfile.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 15</value>
@@ -295,10 +295,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblProfile.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="cmbProfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 238</value>
+    <value>56, 280</value>
   </data>
   <data name="cmbProfile.Size" type="System.Drawing.Size, System.Drawing">
     <value>355, 23</value>
@@ -316,13 +316,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbProfile.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="lstSavedata.ItemHeight" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="lstSavedata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 281</value>
+    <value>10, 323</value>
   </data>
   <data name="lstSavedata.Size" type="System.Drawing.Size, System.Drawing">
     <value>507, 214</value>
@@ -340,13 +340,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lstSavedata.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="txtMemo.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="txtMemo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 280</value>
+    <value>525, 322</value>
   </data>
   <data name="txtMemo.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -371,10 +371,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtMemo.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="numMaxAutosave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 158</value>
+    <value>469, 200</value>
   </data>
   <data name="numMaxAutosave.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 23</value>
@@ -392,13 +392,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numMaxAutosave.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="lblMaxAutosave.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblMaxAutosave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 160</value>
+    <value>522, 202</value>
   </data>
   <data name="lblMaxAutosave.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 15</value>
@@ -419,13 +419,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblMaxAutosave.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="lblBackupFolderPath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblBackupFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 49</value>
+    <value>23, 91</value>
   </data>
   <data name="lblBackupFolderPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 15</value>
@@ -446,10 +446,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblBackupFolderPath.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="cmbSavename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 144</value>
+    <value>111, 186</value>
   </data>
   <data name="cmbSavename.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 23</value>
@@ -467,13 +467,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbSavename.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="lblSavename.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblSavename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 147</value>
+    <value>40, 189</value>
   </data>
   <data name="lblSavename.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 15</value>
@@ -494,10 +494,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSavename.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="cmbSaveprofile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 105</value>
+    <value>111, 147</value>
   </data>
   <data name="cmbSaveprofile.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 23</value>
@@ -515,13 +515,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbSaveprofile.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="lblSaveprofile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblSaveprofile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 108</value>
+    <value>2, 150</value>
   </data>
   <data name="lblSaveprofile.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 15</value>
@@ -542,10 +542,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSaveprofile.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnDeleteSavedata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 501</value>
+    <value>444, 543</value>
   </data>
   <data name="btnDeleteSavedata.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -566,10 +566,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDeleteSavedata.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btnLordSavedata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 501</value>
+    <value>260, 543</value>
   </data>
   <data name="btnLordSavedata.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -590,10 +590,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnLordSavedata.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btnDeleteProfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 238</value>
+    <value>417, 280</value>
   </data>
   <data name="btnDeleteProfile.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
@@ -614,10 +614,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDeleteProfile.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="cmbAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 11</value>
+    <value>111, 53</value>
   </data>
   <data name="cmbAccount.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 23</value>
@@ -635,13 +635,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbAccount.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="lblAccount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 14</value>
+    <value>18, 56</value>
   </data>
   <data name="lblAccount.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 15</value>
@@ -662,10 +662,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblAccount.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="btnChangeName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 501</value>
+    <value>341, 543</value>
   </data>
   <data name="btnChangeName.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 23</value>
@@ -686,16 +686,64 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnChangeName.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <data name="cmbGame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 15</value>
+  </data>
+  <data name="cmbGame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 23</value>
+  </data>
+  <data name="cmbGame.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.Name" xml:space="preserve">
+    <value>cmbGame</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblGame.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblGame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 18</value>
+  </data>
+  <data name="lblGame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 15</value>
+  </data>
+  <data name="lblGame.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblGame.Text" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="&gt;&gt;lblGame.Name" xml:space="preserve">
+    <value>lblGame</value>
+  </data>
+  <data name="&gt;&gt;lblGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGame.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGame.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>794, 536</value>
+    <value>794, 576</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -957,7 +1005,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>DarkSoulsIII SaveBackup App</value>
+    <value>FromGames SaveBackup App</value>
   </data>
   <data name="&gt;&gt;timerBackup.Name" xml:space="preserve">
     <value>timerBackup</value>

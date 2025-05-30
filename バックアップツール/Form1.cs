@@ -12,41 +12,31 @@ namespace DS3BackupApp {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
+            cmbGame.Items.Add(AppConstants.DarkSoulsRjp);
+            cmbGame.Items.Add(AppConstants.DarkSoulsRen);
+            cmbGame.Items.Add(AppConstants.DarkSoulsIISotFS);
+            cmbGame.Items.Add(AppConstants.DarkSoulsIII);
+            cmbGame.Items.Add(AppConstants.Sekiro);
+            cmbGame.Items.Add(AppConstants.EldenRing);
+            cmbGame.Items.Add(AppConstants.Nightreign);
+            cmbGame.Items.Add(AppConstants.ArmoredCore6);
+
             if (Properties.Settings.Default.IsFirstRun) {
                 txtBackupFolderPath.Text = AppConstants.DefaultBackupPath;
                 int minutes = (int)numBackupInterval.Value;
                 timerBackup.Interval = minutes * 60 * 1000; // 分をミリ秒に変換
 
-                string[] accountFolders = AccountHelper.GetAccounFolders();
-                if (accountFolders.Length == 0) {
-                    Application.Exit();
-                }
-
-                saveFolderPath = accountFolders[0];
-
-                AccountHelper.SetAccount(accountFolders, cmbAccount);
-
-                if (accountFolders.Length > 1) {
-                    MessageBox.Show(string.Format(Properties.Resources.Info_Account, saveFolderPath));
-                }
-
-                ProfileService.SetProfile(txtBackupFolderPath.Text.Trim(), cmbSaveprofile, cmbProfile);
+                cmbGame.SelectedItem = AppConstants.DarkSoulsIII;
 
                 Properties.Settings.Default.IsFirstRun = false;
                 Properties.Settings.Default.Save();
             } else {
-                txtBackupFolderPath.Text = Properties.Settings.Default.BackupFolder;
+                txtBackupFolderPath.Text = Properties.Settings.Default.BackupFolder;//設定ファイルの見直し
                 numBackupInterval.Value = Properties.Settings.Default.BackupInterval;
                 timerBackup.Interval = (int)numBackupInterval.Value * 60 * 1000;
                 saveFolderPath = Properties.Settings.Default.SaveFolder;
                 numMaxAutosave.Value = Properties.Settings.Default.MaxAutosave;
-
-                if (!string.IsNullOrEmpty(txtBackupFolderPath.Text.Trim())) {
-                    ProfileService.SetProfile(txtBackupFolderPath.Text.Trim(), cmbSaveprofile, cmbProfile);
-                }
-
-                string[] accountFolders = AccountHelper.GetAccounFolders();
-                AccountHelper.SetAccount(accountFolders, cmbAccount);
+                cmbGame.SelectedItem = Properties.Settings.Default.SelectedGame;
             }
 
             IsLoading = false;
@@ -64,6 +54,7 @@ namespace DS3BackupApp {
                     Properties.Settings.Default.SelectedProfile = cmbProfile.Text.Trim();
                     Properties.Settings.Default.SelectedSaveprofile = cmbSaveprofile.Text.Trim();
                     Properties.Settings.Default.SelectedAccount = cmbAccount.Text.Trim();
+                    Properties.Settings.Default.SelectedGame = cmbGame.Text.Trim();
 
                     Properties.Settings.Default.Save();
                     retry = false; // 成功した場合はリトライしない
@@ -109,7 +100,7 @@ namespace DS3BackupApp {
         private void btnSelectBackupFolder_Click(object sender, EventArgs e) {
             using (FolderBrowserDialog dialog = new()) {
                 if (dialog.ShowDialog() == DialogResult.OK) {
-                    txtBackupFolderPath.Text = Path.Combine(dialog.SelectedPath, AppConstants.TopBackupFolder, AppConstants.DarkSoulsIII, cmbAccount.Text.Trim());//別げーのときはここを変更する
+                    txtBackupFolderPath.Text = Path.Combine(dialog.SelectedPath, AppConstants.TopBackupFolder, cmbGame.Text.Trim(), cmbAccount.Text.Trim());
                 }
             }
 
@@ -119,7 +110,7 @@ namespace DS3BackupApp {
             }
 
             IsBackupPathChanged = true;
-            ProfileService.SetProfile(txtBackupFolderPath.Text.Trim(), cmbSaveprofile, cmbProfile);
+            ProfileService.SetProfile(txtBackupFolderPath.Text.Trim(), cmbSaveprofile, cmbProfile, IsLoading);
             IsBackupPathChanged = false;
         }
 
@@ -142,7 +133,7 @@ namespace DS3BackupApp {
                 return;
             }
 
-            SavedataService.Restore(backupPath, saveFolderPath);
+            SavedataService.Restore(backupPath, saveFolderPath, cmbGame.Text.Trim());
 
         }
 
@@ -294,14 +285,20 @@ namespace DS3BackupApp {
                 return;
             }
 
-            string path = Path.Combine(AppConstants.AppDataPathDSIII, cmbAccount.Text.Trim());//別ゲーのときはここを変更する
+            string gameFolder = PathHelper.GetGamePath(cmbGame.Text.Trim());
+            if (string.IsNullOrEmpty(gameFolder)) {
+                MessageHepler.Error(Properties.Resources.Error_InvalidGameName);
+                return;
+            }
+
+            string path = Path.Combine(gameFolder, cmbAccount.Text.Trim());
             if (Directory.Exists(path)) {
                 IsAccuountChanged = true;
                 saveFolderPath = path;
                 int selectedBackupPathEnd = txtBackupFolderPath.Text.Trim().IndexOf(AppConstants.TopBackupFolder);
                 string selectedBackupPath = txtBackupFolderPath.Text.Trim()[..selectedBackupPathEnd];
-                txtBackupFolderPath.Text = Path.Combine(selectedBackupPath, AppConstants.TopBackupFolder, AppConstants.DarkSoulsIII, cmbAccount.Text.Trim());
-                ProfileService.SetProfile(txtBackupFolderPath.Text.Trim(), cmbSaveprofile, cmbProfile);
+                txtBackupFolderPath.Text = Path.Combine(selectedBackupPath, AppConstants.TopBackupFolder, cmbGame.Text.Trim(), cmbAccount.Text.Trim());
+                ProfileService.SetProfile(txtBackupFolderPath.Text.Trim(), cmbSaveprofile, cmbProfile, IsLoading);
                 IsAccuountChanged = false;
                 cmbSavename.Text = "";
             } else {
@@ -391,6 +388,45 @@ namespace DS3BackupApp {
             }
 
             MemoService.Read(profilePath, txtMemo);
+        }
+
+        private void cmbGame_SelectedIndexChanged(object sender, EventArgs e) {
+            string gameFolder = PathHelper.GetGamePath(cmbGame.Text.Trim());
+            if (string.IsNullOrEmpty(gameFolder)) {
+                MessageHepler.Error(Properties.Resources.Error_InvalidGameName);
+                return;
+            }
+            if (!Directory.Exists(gameFolder)) {
+                ToggleElement(false);
+                MessageHepler.Error(Properties.Resources.Error_NotfoundSavefolder);
+                return;
+            }
+
+            string[] accountFolders = AccountHelper.GetAccounFolders(gameFolder);
+            if (accountFolders.Length == 0) {
+                ToggleElement(false);
+                return;
+            }
+
+            ToggleElement(true);
+
+            saveFolderPath = accountFolders[0];
+
+            AccountHelper.SetAccount(accountFolders, cmbAccount, gameFolder);
+        }
+
+        private void ToggleElement(bool isEnabled) {
+            btnBackup.Enabled = isEnabled;
+            btnChangeName.Enabled = isEnabled;
+            btnDeleteProfile.Enabled = isEnabled;
+            btnDeleteSavedata.Enabled = isEnabled;
+            btnLordSavedata.Enabled = isEnabled;
+            btnSelectBackupFolder.Enabled = isEnabled;
+            chkAutoBackup.Enabled = isEnabled;
+            lstSavedata.Enabled = isEnabled;
+            cmbProfile.Enabled = isEnabled;
+            txtBackupFolderPath.Enabled = isEnabled;
+            cmbAccount.Enabled = isEnabled;
         }
     }
 }

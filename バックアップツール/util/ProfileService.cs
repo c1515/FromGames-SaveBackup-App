@@ -128,7 +128,7 @@ namespace DS3BackupApp.util {
             return FileSystemHelper.DeleteDirectory(backupPath, true);
         }
 
-        internal static void SetProfile(string backupPath, ComboBox cmbSaveprofile, ComboBox cmbProfile) {
+        internal static void SetProfile(string backupPath, ComboBox cmbSaveprofile, ComboBox cmbProfile, bool IsLoading) {
             if (cmbSaveprofile == null || cmbSaveprofile.Items == null) {
                 throw new ArgumentNullException(nameof(cmbSaveprofile), "cmbSaveprofileか、そのアイテムが未設定");
             }
@@ -148,13 +148,13 @@ namespace DS3BackupApp.util {
                     if (!string.IsNullOrEmpty(profileName)) { // Null チェックを追加
                         if (profileName != AppConstants.AutosaveProfile) {
                             cmbSaveprofile.Items.Add(profileName);
-                            if (Properties.Settings.Default.SelectedSaveprofile == profileName) {
+                            if (IsLoading && Properties.Settings.Default.SelectedSaveprofile == profileName) {
                                 cmbSaveprofile.SelectedItem = profileName; // 選択されたアイテムを設定
                                 IsSaveprofileMatch = true;
                             }
                         }
                         cmbProfile.Items.Add(profileName);
-                        if (Properties.Settings.Default.SelectedProfile == profileName) {
+                        if (IsLoading && Properties.Settings.Default.SelectedProfile == profileName) {
                             cmbProfile.SelectedItem = profileName;
                             IsProfileMatch = true;
                         }

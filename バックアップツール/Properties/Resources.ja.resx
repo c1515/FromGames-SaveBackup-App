@@ -148,7 +148,7 @@
   </data>
   <data name="Error_NotfoundSavefolder" xml:space="preserve">
     <value>セーブデータの保存フォルダが見つかりませんでした。
-ゲームを起動してセーブデータを作成してください。</value>
+対象ゲームを起動してセーブデータを作成してください。</value>
   </data>
   <data name="Error_NotfoundSavefolderForAuto" xml:space="preserve">
     <value>セーブデータの保存フォルダが見つからなかったため、自動バックアップを実行できませんでした。
@@ -373,5 +373,8 @@
     <value>フォルダの更新日時の取得中に予期しないエラーが発生しました。
 
 {0}</value>
+  </data>
+  <data name="Error_InvalidGameName" xml:space="preserve">
+    <value>無効なゲーム名です。</value>
   </data>
 </root>

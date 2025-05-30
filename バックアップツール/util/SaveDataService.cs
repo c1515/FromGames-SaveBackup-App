@@ -1,7 +1,7 @@
 ﻿namespace DS3BackupApp.util {
     internal static class SavedataService {
         internal static void Backup(string backupPath, string saveFolderPath) {
-            foreach (var filePath in Directory.GetFiles(saveFolderPath)) {
+            foreach (var filePath in FileSystemHelper.GetFiles(saveFolderPath)) {
                 string fileName = Path.GetFileName(filePath);
                 string destPath = Path.Combine(backupPath, fileName);
                 FileSystemHelper.CopyFile(filePath, destPath);
@@ -10,15 +10,15 @@
             MemoService.Create(backupPath);
         }
 
-        internal static void Restore(string backupPath, string saveFolderPath) {
-            if (!File.Exists(Path.Combine(backupPath, AppConstants.SavedataFile))) {
+        internal static void Restore(string backupPath, string saveFolderPath, string gameName) {
+            if (!File.Exists(Path.Combine(backupPath, GetSavefile(gameName)))) {
                 MessageHepler.Error(Properties.Resources.Error_NotFoundSavedata);
                 return;
             }
 
-            foreach (var filePath in Directory.GetFiles(backupPath)) {
+            foreach (var filePath in FileSystemHelper.GetFiles(backupPath)) {
                 string fileName = Path.GetFileName(filePath);
-                if (fileName == AppConstants.SavedataFile) {
+                if (fileName != AppConstants.MemoFile) {
                     string destPath = Path.Combine(saveFolderPath, fileName);
                     FileSystemHelper.CopyFile(filePath, destPath);
                 }
@@ -87,6 +87,20 @@
                     }
                 }
             }
+        }
+
+        internal static string GetSavefile(string gameName) {
+            return gameName switch {
+                AppConstants.DarkSoulsIII => AppConstants.SaveFileDS3,
+                AppConstants.DarkSoulsIISotFS => AppConstants.SaveFileDS2,
+                AppConstants.DarkSoulsRjp => AppConstants.SaveFileDSR,
+                AppConstants.DarkSoulsRen => AppConstants.SaveFileDSR,
+                AppConstants.EldenRing => AppConstants.SaveFileER,
+                AppConstants.Sekiro => AppConstants.SaveFileDSekiro,
+                AppConstants.ArmoredCore6 => AppConstants.SaveFileAC6,
+                AppConstants.Nightreign => AppConstants.SaveFileNR,
+                _ => "不正な値",
+            };
         }
     }
 }

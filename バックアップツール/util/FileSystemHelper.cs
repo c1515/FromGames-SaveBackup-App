@@ -146,6 +146,29 @@ namespace DS3BackupApp.util {
             return Array.Empty<string>(); // エラー時は空の配列を返す
         }
 
+        internal static string[] GetFiles(string path) {
+            try {
+                return Directory.GetFiles(path);
+            } catch (UnauthorizedAccessException ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_UnauthorizedAccess, ex.Message));
+            } catch (ArgumentException ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_ArgumentPath, ex.Message));
+            } catch (PathTooLongException ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_PathTooLong, ex.Message));
+            } catch (DirectoryNotFoundException ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_DirectoryNotFound, ex.Message));
+            } catch (IOException ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_IO, ex.Message));
+            } catch (NotSupportedException ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_NotSupportedPath, ex.Message));
+            } catch (SecurityException ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_Security, ex.Message));
+            } catch (Exception ex) {
+                MessageHepler.Error(string.Format(Properties.Resources.Error_GetDirectoriesEx, ex.Message));
+            }
+            return Array.Empty<string>(); // エラー時は空の配列を返す
+        }
+
         internal static bool CreateFile(string path) {
             try {
                 File.Create(path).Close();

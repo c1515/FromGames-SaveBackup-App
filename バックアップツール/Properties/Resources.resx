@@ -148,7 +148,7 @@
   </data>
   <data name="Error_NotfoundSavefolder" xml:space="preserve">
     <value>Could not find the folder to save the save data.
-Please start the game and create the save data.</value>
+Please start the selected game and create the save data.</value>
   </data>
   <data name="Error_NotfoundSavefolderForAuto" xml:space="preserve">
     <value>Automatic backup could not be performed because the folder where the saved data was saved could not be found.
@@ -187,8 +187,8 @@ Saved data: {0}</value>
     <value>Restore is complete.</value>
   </data>
   <data name="Info_SelectSavedata" xml:space="preserve">
-    <value>note box
-Select the saved data.</value>
+    <value>Note box
+Select the savedata.</value>
   </data>
   <data name="Warning_Close" xml:space="preserve">
     <value>An error occurred while saving settings.
@@ -373,5 +373,8 @@ Please select an account again.</value>
     <value>An unexpected error occurred while retrieving the modification date of a folder.
 
 {0}</value>
+  </data>
+  <data name="Error_InvalidGameName" xml:space="preserve">
+    <value>Invalid game name.</value>
   </data>
 </root>

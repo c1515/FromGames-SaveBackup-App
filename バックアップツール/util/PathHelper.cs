@@ -12,8 +12,8 @@
             return "";
         }
 
-        internal static bool ValidatePath(string backupPath, bool isChkExists) {
-            return IsValidPath(backupPath,
+        internal static bool ValidatePath(string path, bool isChkExists) {
+            return IsValidPath(path,
                  Properties.Resources.Error_EmptyBackupPath,
                  Properties.Resources.Error_InvalidBackupPathChars,
                  Properties.Resources.Error_BackupPathTooLong,
@@ -96,6 +96,20 @@
                 MessageHepler.Error(invalidPathMessage);
                 return false;
             }
+        }
+
+        internal static string GetGamePath(string game) {
+            return game switch {
+                AppConstants.DarkSoulsIII => AppConstants.SavePathDSIII,
+                AppConstants.DarkSoulsIISotFS => AppConstants.SavePathDSII,
+                AppConstants.DarkSoulsRjp => AppConstants.SavePathDSRjp,
+                AppConstants.DarkSoulsRen => AppConstants.SavePathDSRen,
+                AppConstants.EldenRing => AppConstants.SavePathER,
+                AppConstants.Sekiro => AppConstants.SavePathSekiro,
+                AppConstants.ArmoredCore6 => AppConstants.SavePathAC6,
+                AppConstants.Nightreign => AppConstants.SavePathNR,
+                _ => ""
+            };
         }
     }
 }

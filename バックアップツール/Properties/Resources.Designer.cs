@@ -369,6 +369,15 @@ namespace DS3BackupApp.Properties {
         }
         
         /// <summary>
+        ///   Invalid game name. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Error_InvalidGameName {
+            get {
+                return ResourceManager.GetString("Error_InvalidGameName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Invalid save data folder path. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Error_InvalidSavePath {
@@ -563,7 +572,7 @@ namespace DS3BackupApp.Properties {
         
         /// <summary>
         ///   Could not find the folder to save the save data.
-        ///Please start the game and create the save data. に類似しているローカライズされた文字列を検索します。
+        ///Please start the selected game and create the save data. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Error_NotfoundSavefolder {
             get {
@@ -673,8 +682,8 @@ namespace DS3BackupApp.Properties {
         }
         
         /// <summary>
-        ///   note box
-        ///Select the saved data. に類似しているローカライズされた文字列を検索します。
+        ///   Note box
+        ///Select savedata. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Info_SelectSavedata {
             get {

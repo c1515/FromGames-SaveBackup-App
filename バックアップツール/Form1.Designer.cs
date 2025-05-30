@@ -49,6 +49,8 @@
             cmbAccount = new ComboBox();
             lblAccount = new Label();
             btnChangeName = new Button();
+            cmbGame = new ComboBox();
+            lblGame = new Label();
             ((System.ComponentModel.ISupportInitialize)numBackupInterval).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numMaxAutosave).BeginInit();
             SuspendLayout();
@@ -206,10 +208,25 @@
             btnChangeName.UseVisualStyleBackColor = true;
             btnChangeName.Click += btnChangeName_Click;
             // 
+            // cmbGame
+            // 
+            cmbGame.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbGame.FormattingEnabled = true;
+            resources.ApplyResources(cmbGame, "cmbGame");
+            cmbGame.Name = "cmbGame";
+            cmbGame.SelectedIndexChanged += cmbGame_SelectedIndexChanged;
+            // 
+            // lblGame
+            // 
+            resources.ApplyResources(lblGame, "lblGame");
+            lblGame.Name = "lblGame";
+            // 
             // FormBackupApp
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(lblGame);
+            Controls.Add(cmbGame);
             Controls.Add(btnChangeName);
             Controls.Add(lblAccount);
             Controls.Add(cmbAccount);
@@ -269,5 +286,7 @@
         private ComboBox cmbAccount;
         private Label lblAccount;
         private Button btnChangeName;
+        private ComboBox cmbGame;
+        private Label lblGame;
     }
 }
