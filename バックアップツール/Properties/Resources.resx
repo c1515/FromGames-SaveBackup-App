@@ -377,4 +377,10 @@ Please select an account again.</value>
   <data name="Error_InvalidGameName" xml:space="preserve">
     <value>Invalid game name.</value>
   </data>
+  <data name="AccountLabel_Account" xml:space="preserve">
+    <value>Steam Account</value>
+  </data>
+  <data name="AccountLabel_BackupTarget" xml:space="preserve">
+    <value>Backup target</value>
+  </data>
 </root>

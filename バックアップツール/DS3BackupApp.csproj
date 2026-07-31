@@ -21,6 +21,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Properties\RepoResources.ja.Designer.cs">
+      <DependentUpon>RepoResources.ja.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Properties\RepoResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RepoResources.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -39,6 +49,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Properties\RepoResources.ja.resx">
+      <LastGenOutput>RepoResources.ja.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\RepoResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RepoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Properties\Resources.resx">
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -121,7 +121,7 @@
     <value>バックアップ</value>
   </data>
   <data name="btnSelectBackupFolder.Text" xml:space="preserve">
-    <value>参照</value>
+    <value>選択</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="chkAutoBackup.Size" type="System.Drawing.Size, System.Drawing">
@@ -155,7 +155,7 @@
     <value>最大自動バックアップ数</value>
   </data>
   <data name="lblBackupFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 91</value>
+    <value>10, 19</value>
   </data>
   <data name="lblBackupFolderPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 15</value>
@@ -191,7 +191,7 @@
     <value>プロファイル削除</value>
   </data>
   <data name="lblAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 56</value>
+    <value>22, 109</value>
   </data>
   <data name="lblAccount.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 15</value>
@@ -207,13 +207,43 @@
     <value>名前の変更</value>
   </data>
   <data name="lblGame.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 18</value>
+    <value>71, 72</value>
   </data>
   <data name="lblGame.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 15</value>
   </data>
   <data name="lblGame.Text" xml:space="preserve">
     <value>ゲーム</value>
+  </data>
+  <data name="lblCompletedLevels.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 216</value>
+  </data>
+  <data name="lblCompletedLevels.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 15</value>
+  </data>
+  <data name="lblCompletedLevels.Text" xml:space="preserve">
+    <value>クリア済みレベル :</value>
+  </data>
+  <data name="lblCurrentLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 233</value>
+  </data>
+  <data name="lblCurrentLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 15</value>
+  </data>
+  <data name="lblCurrentLocation.Text" xml:space="preserve">
+    <value>現在地 :</value>
+  </data>
+  <data name="btnBackupFolderOpen.Text" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="chkSelectLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 545</value>
+  </data>
+  <data name="chkSelectLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 19</value>
+  </data>
+  <data name="chkSelectLevel.Text" xml:space="preserve">
+    <value>レベルを選択する</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

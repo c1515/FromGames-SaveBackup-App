@@ -30,7 +30,11 @@
         public const string NightreignPath = "Nightreign";
         public const string Nightreign = "EldenRing Nightreign";
         public const string SaveFileNR = "NR0000.sl2";
-        public static readonly string DefaultBackupPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), FromGames + DefaultBackupFolderSuffix, TopBackupFolder, DarkSoulsIII);
+        public const string Repo = "R.E.P.O.";
+        public const string RepoSaveDirPrefix = "REPO_SAVE_";
+        public const string RepoSaveFileExtension = ".es3";
+        public static readonly string DefaultBackupPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), FromGames + DefaultBackupFolderSuffix);
+        public static readonly string DefaultBackupPathDS3 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), FromGames + DefaultBackupFolderSuffix, TopBackupFolder, DarkSoulsIII);
         public static readonly string SavePathDSIII = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), DarkSoulsIII);
         public static readonly string SavePathDSII = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), DarkSoulsII);
         public static readonly string SavePathDSRjp = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), FromSoftware, DarkSoulsRPath);
@@ -39,5 +43,10 @@
         public static readonly string SavePathSekiro = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), Sekiro);
         public static readonly string SavePathAC6 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ArmoredCore6);
         public static readonly string SavePathNR = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), NightreignPath);
+        // LocalLow は SpecialFolder に無いためユーザープロファイルから組立てています (例: %USERPROFILE%\AppData\LocalLow)
+        public static readonly string LocalLowPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "AppData", "LocalLow");
+        public static readonly string SavePathRepo = Path.Combine(LocalLowPath, "semiwork", "Repo", "saves");
+        public static readonly string RepoSavedataListFormat = "{0} : " + Properties.RepoResources.SavedataListFormat_CompletedLevels + " {1}, " + Properties.RepoResources.SavedataListFormat_CurrentLocation + " {2} - {3:yyyy/MM/dd HH:mm:ss}";
+
     }
 }

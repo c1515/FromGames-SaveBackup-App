@@ -12,7 +12,7 @@ namespace DS3BackupApp.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.14.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "18.8.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -122,12 +122,12 @@ namespace DS3BackupApp.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
-        public int AutosaveIndex {
+        public int AutosaveIndexDS3 {
             get {
-                return ((int)(this["AutosaveIndex"]));
+                return ((int)(this["AutosaveIndexDS3"]));
             }
             set {
-                this["AutosaveIndex"] = value;
+                this["AutosaveIndexDS3"] = value;
             }
         }
         
@@ -140,6 +140,102 @@ namespace DS3BackupApp.Properties {
             }
             set {
                 this["SelectedGame"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexDS2 {
+            get {
+                return ((int)(this["AutosaveIndexDS2"]));
+            }
+            set {
+                this["AutosaveIndexDS2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexDSRjp {
+            get {
+                return ((int)(this["AutosaveIndexDSRjp"]));
+            }
+            set {
+                this["AutosaveIndexDSRjp"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexDSRen {
+            get {
+                return ((int)(this["AutosaveIndexDSRen"]));
+            }
+            set {
+                this["AutosaveIndexDSRen"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexSekiro {
+            get {
+                return ((int)(this["AutosaveIndexSekiro"]));
+            }
+            set {
+                this["AutosaveIndexSekiro"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexER {
+            get {
+                return ((int)(this["AutosaveIndexER"]));
+            }
+            set {
+                this["AutosaveIndexER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexNR {
+            get {
+                return ((int)(this["AutosaveIndexNR"]));
+            }
+            set {
+                this["AutosaveIndexNR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexRepo {
+            get {
+                return ((int)(this["AutosaveIndexRepo"]));
+            }
+            set {
+                this["AutosaveIndexRepo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int AutosaveIndexAC6 {
+            get {
+                return ((int)(this["AutosaveIndexAC6"]));
+            }
+            set {
+                this["AutosaveIndexAC6"] = value;
             }
         }
     }

@@ -377,4 +377,10 @@
   <data name="Error_InvalidGameName" xml:space="preserve">
     <value>無効なゲーム名です。</value>
   </data>
+  <data name="AccountLabel_Account" xml:space="preserve">
+    <value>Steamアカウント</value>
+  </data>
+  <data name="AccountLabel_BackupTarget" xml:space="preserve">
+    <value>バックアップ対象</value>
+  </data>
 </root>

@@ -1,15 +1,13 @@
 ﻿namespace DS3BackupApp.util {
     internal static class PathHelper {
-        internal static string GetBackupPathFromList(string savename, string backupFolder, string profile) {
-            if (!string.IsNullOrEmpty(savename)) {
-                string backupPath = Path.Combine(backupFolder, profile, savename);
+        internal static void GetBackupPathFromList(string saveName, string backupFolder, string profile, out string backupPath) {
+            backupPath = string.Empty;
+            if (!string.IsNullOrEmpty(saveName)) {
+                backupPath = Path.Combine(backupFolder, profile, saveName);
                 if (!Directory.Exists(backupPath)) {
                     MessageHepler.Error(Properties.Resources.Error_NotfoundBackupfolder);
-                    return "";
                 }
-                return backupPath;
             }
-            return "";
         }
 
         internal static bool ValidatePath(string path, bool isChkExists) {
@@ -108,8 +106,17 @@
                 AppConstants.Sekiro => AppConstants.SavePathSekiro,
                 AppConstants.ArmoredCore6 => AppConstants.SavePathAC6,
                 AppConstants.Nightreign => AppConstants.SavePathNR,
+                AppConstants.Repo => AppConstants.SavePathRepo,
                 _ => ""
             };
+        }
+
+        internal static string[] GetSubFolders(string specifiedFolder) {
+            string[] subFolders = FileSystemHelper.GetDirectories(specifiedFolder);
+            if (subFolders.Length == 0) {
+                MessageHepler.Error(Properties.Resources.Error_NotfoundSavefolder);
+            }
+            return subFolders;
         }
     }
 }

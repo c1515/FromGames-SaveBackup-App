@@ -1,6 +1,4 @@
-﻿using System.Security.AccessControl;
-
-namespace DS3BackupApp.util {
+﻿namespace DS3BackupApp.util {
     internal static class ProfileService {
         internal static void RemoveSavedata(string savename, ListBox listBox) {
             if (listBox == null || listBox.Items == null) {
@@ -71,9 +69,9 @@ namespace DS3BackupApp.util {
                 return;
             }
 
-            string[] saveFolders = FileSystemHelper.GetDirectories(profileParh);
+            string[] saveDirs = FileSystemHelper.GetDirectories(profileParh);
             if (profile == AppConstants.AutosaveProfile) {
-                Array.Sort(saveFolders, (x, y) => {
+                Array.Sort(saveDirs, (x, y) => {
                     string xName = Path.GetFileName(x).Replace(AppConstants.AutosaveFormat, "");
                     string yName = Path.GetFileName(y).Replace(AppConstants.AutosaveFormat, "");
 
@@ -85,18 +83,23 @@ namespace DS3BackupApp.util {
                 });
             }
 
-            foreach (var dirPath in saveFolders) {
-                string? savename = Path.GetFileName(dirPath);
-                if (!string.IsNullOrEmpty(savename)) {
-                    if (FileSystemHelper.GetLastWriteTime(dirPath, out DateTime lastWriteTime)) {
-                        lstSavedata.Items.Add(string.Format(AppConstants.SavedataListFormat, savename, lastWriteTime));
+            bool isRepo = backupPath.Contains(AppConstants.Repo);
+            foreach (var saveDir in saveDirs) {
+                string? saveName = Path.GetFileName(saveDir);
+                if (!string.IsNullOrEmpty(saveName) && FileSystemHelper.GetLastWriteTime(saveDir, out DateTime lastWriteTime)) {
+                    if (isRepo) {
+                        var (backupDir, _) = RepoService.GetBackupDir(saveDir);
+                        var (completedLevel, currentLocation) = RepoService.GetLevelAndLocation(backupDir);
+                        lstSavedata.Items.Add(string.Format(AppConstants.RepoSavedataListFormat, saveName, completedLevel, currentLocation, lastWriteTime));
+                    } else {
+                        lstSavedata.Items.Add(string.Format(AppConstants.SavedataListFormat, saveName, lastWriteTime));
                     }
-
                 }
             }
         }
 
-        internal static string GetSavename(ListBox lstSavedata) {
+        internal static void GetSavename(ListBox lstSavedata, out string saveName) {
+            saveName = string.Empty;
             if (lstSavedata == null || lstSavedata.Items == null) {
                 throw new ArgumentNullException(nameof(lstSavedata), "ListBoxか、そのアイテムが未設定");
             }
@@ -106,13 +109,21 @@ namespace DS3BackupApp.util {
                 int savenameEnd = selectedItem.IndexOf(" - ");
                 if (savenameEnd < 0) {
                     MessageHepler.Error(Properties.Resources.Error_InvalidFormat);
-                    return "";
+                    return;
                 }
-                string savename = selectedItem.Substring(0, savenameEnd);
-                return savename;
+                saveName = selectedItem[..savenameEnd];
+
+                if (saveName.Contains(':')) {
+                     savenameEnd = selectedItem.IndexOf(" : ");
+                    if (savenameEnd < 0) {
+                        MessageHepler.Error(Properties.Resources.Error_InvalidFormat);
+                        return;
+                    }
+                    saveName = selectedItem[..savenameEnd];
+                }
+            } else {
+                MessageHepler.Error(Properties.Resources.Error_NoItemSelected);
             }
-            MessageHepler.Error(Properties.Resources.Error_NoItemSelected);
-            return "";
         }
 
         internal static bool Delete(string backupPath, string profile) {

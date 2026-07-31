@@ -1,13 +1,5 @@
 ﻿namespace DS3BackupApp.util {
     internal static class AccountHelper {
-        internal static string[] GetAccounFolders(string gameFolder) {
-            string[] accountFolders = FileSystemHelper.GetDirectories(gameFolder);
-            if (accountFolders.Length == 0) {
-                MessageHepler.Error(Properties.Resources.Error_NotfoundSavefolder);
-            }
-            return accountFolders;
-        }
-
         internal static void SetAccount(string[] accountFolders, ComboBox cmbAccount, string gameFolder) {
             if (cmbAccount == null) {
                 throw new ArgumentNullException(nameof(cmbAccount), "ComboBoxが未設定");
