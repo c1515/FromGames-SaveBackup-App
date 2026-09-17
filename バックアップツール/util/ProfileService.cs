@@ -114,7 +114,7 @@
                 saveName = selectedItem[..savenameEnd];
 
                 if (saveName.Contains(':')) {
-                     savenameEnd = selectedItem.IndexOf(" : ");
+                    savenameEnd = selectedItem.IndexOf(" : ");
                     if (savenameEnd < 0) {
                         MessageHepler.Error(Properties.Resources.Error_InvalidFormat);
                         return;
@@ -171,7 +171,7 @@
                         }
                     }
                 }
-                if (!IsSaveprofileMatch) {
+                if (!IsSaveprofileMatch && cmbSaveprofile.Items.Count > 0) {
                     cmbSaveprofile.SelectedIndex = 0;
                 }
                 if (!IsProfileMatch) {
