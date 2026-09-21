@@ -117,299 +117,648 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;lblGame.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 225</value>
+  </data>
+  <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblBackupInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="btnBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;cmbProfile.Name" xml:space="preserve">
-    <value>cmbProfile</value>
+  <data name="btnBackup.Text" xml:space="preserve">
+    <value>Backup</value>
   </data>
-  <data name="&gt;&gt;chkAutoBackup.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnBackup.Name" xml:space="preserve">
+    <value>btnBackup</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblMaxAutosave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 15</value>
+  <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
+    <value>32</value>
   </data>
-  <data name="chkAutoBackup.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="txtSelectedBackupFolderPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 15</value>
   </data>
-  <data name="&gt;&gt;cmbGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtSelectedBackupFolderPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 23</value>
   </data>
-  <data name="&gt;&gt;btnDeleteProfile.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="txtSelectedBackupFolderPath.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="lblSavename.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;txtSelectedBackupFolderPath.Name" xml:space="preserve">
+    <value>txtSelectedBackupFolderPath</value>
   </data>
-  <data name="txtMemo.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;txtSelectedBackupFolderPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="numBackupInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 171</value>
+  <data name="&gt;&gt;txtSelectedBackupFolderPath.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblMaxAutosave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtSelectedBackupFolderPath.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
-  <data name="cmbAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;lblMaxAutosave.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSelectBackupFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnSelectBackupFolder.Location" type="System.Drawing.Point, System.Drawing">
     <value>615, 15</value>
   </data>
-  <data name="&gt;&gt;numMaxAutosave.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnSelectBackupFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="lblBackupFolderPath.Text" xml:space="preserve">
-    <value>Backup Folder</value>
-  </data>
-  <data name="numBackupInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnLordSavedata.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteSavedata.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDeleteSavedata.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;lblBackupFolderPath.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblCompletedLevels.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;btnSelectBackupFolder.Name" xml:space="preserve">
-    <value>btnSelectBackupFolder</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteProfile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteSavedata.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;chkAutoBackup.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;lblCompletedLevels.Name" xml:space="preserve">
-    <value>lblCompletedLevels</value>
+  <data name="btnSelectBackupFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="btnSelectBackupFolder.Text" xml:space="preserve">
     <value>Browse...</value>
   </data>
-  <data name="lblCurrentLocationDisplay.Visible" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;btnSelectBackupFolder.Name" xml:space="preserve">
+    <value>btnSelectBackupFolder</value>
+  </data>
+  <data name="&gt;&gt;btnSelectBackupFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSelectBackupFolder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSelectBackupFolder.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <metadata name="timerBackup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="chkAutoBackup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAutoBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 146</value>
+  </data>
+  <data name="chkAutoBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 19</value>
+  </data>
+  <data name="chkAutoBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkAutoBackup.Text" xml:space="preserve">
+    <value>Enable Autosave</value>
+  </data>
+  <data name="&gt;&gt;chkAutoBackup.Name" xml:space="preserve">
+    <value>chkAutoBackup</value>
+  </data>
+  <data name="&gt;&gt;chkAutoBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAutoBackup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkAutoBackup.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="numBackupInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 171</value>
+  </data>
+  <data name="numBackupInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 23</value>
+  </data>
+  <data name="numBackupInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;numBackupInterval.Name" xml:space="preserve">
+    <value>numBackupInterval</value>
+  </data>
+  <data name="&gt;&gt;numBackupInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numBackupInterval.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;numBackupInterval.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="lblBackupInterval.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBackupInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 173</value>
+  </data>
+  <data name="lblBackupInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 15</value>
+  </data>
+  <data name="lblBackupInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblBackupInterval.Text" xml:space="preserve">
+    <value>Interval(min)</value>
+  </data>
+  <data name="&gt;&gt;lblBackupInterval.Name" xml:space="preserve">
+    <value>lblBackupInterval</value>
+  </data>
+  <data name="&gt;&gt;lblBackupInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBackupInterval.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBackupInterval.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lblProfile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblProfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 284</value>
+  </data>
+  <data name="lblProfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 15</value>
+  </data>
+  <data name="lblProfile.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblProfile.Text" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="&gt;&gt;lblProfile.Name" xml:space="preserve">
+    <value>lblProfile</value>
+  </data>
+  <data name="&gt;&gt;lblProfile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblProfile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblProfile.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="cmbProfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 280</value>
+  </data>
+  <data name="cmbProfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 23</value>
+  </data>
+  <data name="cmbProfile.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cmbProfile.Name" xml:space="preserve">
+    <value>cmbProfile</value>
+  </data>
+  <data name="&gt;&gt;cmbProfile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbProfile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbProfile.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lstSavedata.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lstSavedata.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 323</value>
+  </data>
+  <data name="lstSavedata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>507, 214</value>
+  </data>
+  <data name="lstSavedata.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lstSavedata.Name" xml:space="preserve">
+    <value>lstSavedata</value>
+  </data>
+  <data name="&gt;&gt;lstSavedata.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstSavedata.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstSavedata.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txtMemo.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="txtMemo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 322</value>
+  </data>
+  <data name="txtMemo.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtMemo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 214</value>
+  </data>
+  <data name="txtMemo.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="txtMemo.Text" xml:space="preserve">
     <value>
 </value>
   </data>
-  <data name="lstSavedata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 323</value>
-  </data>
-  <data name="lblSaveprofile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 15</value>
-  </data>
-  <data name="lblAccount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
-  </data>
-  <data name="&gt;&gt;lblCompletedLevelsCount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="chkAutoBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 146</value>
-  </data>
-  <data name="&gt;&gt;btnLordSavedata.Name" xml:space="preserve">
-    <value>btnLordSavedata</value>
-  </data>
-  <data name="lblCurrentLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;cmbGame.Name" xml:space="preserve">
-    <value>cmbGame</value>
-  </data>
-  <data name="lblMaxAutosave.Text" xml:space="preserve">
-    <value>Max Autosaves</value>
-  </data>
-  <data name="&gt;&gt;timerBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.Name" xml:space="preserve">
-    <value>lblAccount</value>
-  </data>
-  <data name="lblCurrentLocationDisplay.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="lblBackupFolderPathDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 15</value>
-  </data>
-  <data name="btnBackupFolderOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmbProfile.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="lblBackupFolderPathDisplay.Text" xml:space="preserve">
-    <value>BackupFolderPathDisplay</value>
-  </data>
-  <data name="lblBackupInterval.Text" xml:space="preserve">
-    <value>Interval(min)</value>
-  </data>
-  <data name="lblCompletedLevelsCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 15</value>
-  </data>
-  <data name="chkAutoBackup.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;lblBackupFolderPath.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="btnSelectBackupFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocation.Name" xml:space="preserve">
-    <value>lblCurrentLocation</value>
-  </data>
-  <data name="&gt;&gt;lblSavename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numBackupInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSaveprofile.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnDeleteProfile.Text" xml:space="preserve">
-    <value>Profile Delete</value>
-  </data>
-  <data name="lblProfile.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCurrentLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 15</value>
-  </data>
-  <data name="lstSavedata.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;lblBackupInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblBackupFolderPath.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;numMaxAutosave.Name" xml:space="preserve">
-    <value>numMaxAutosave</value>
-  </data>
-  <data name="btnBackup.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblCompletedLevels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 15</value>
-  </data>
-  <data name="&gt;&gt;btnLordSavedata.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtSelectedBackupFolderPath.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblCompletedLevelsCount.Name" xml:space="preserve">
-    <value>lblCompletedLevelsCount</value>
-  </data>
-  <data name="&gt;&gt;lstSavedata.Name" xml:space="preserve">
-    <value>lstSavedata</value>
-  </data>
-  <data name="lblGame.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmbSaveprofile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 147</value>
-  </data>
-  <data name="lblSaveprofile.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;btnChangeName.Name" xml:space="preserve">
-    <value>btnChangeName</value>
-  </data>
-  <data name="&gt;&gt;numBackupInterval.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtSelectedBackupFolderPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 23</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnBackupFolderOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>696, 15</value>
-  </data>
-  <data name="&gt;&gt;numMaxAutosave.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="lblAccount.Text" xml:space="preserve">
-    <value>Steam Account</value>
-  </data>
-  <data name="&gt;&gt;btnLordSavedata.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="btnSelectBackupFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteProfile.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnBackupFolderOpen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtMemo.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocation.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lstSavedata.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.Name" xml:space="preserve">
-    <value>btnBackup</value>
-  </data>
-  <data name="lblSaveprofile.Text" xml:space="preserve">
-    <value>Destination Profile</value>
-  </data>
-  <data name="&gt;&gt;btnSelectBackupFolder.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="lblAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="&gt;&gt;txtMemo.Name" xml:space="preserve">
+    <value>txtMemo</value>
   </data>
   <data name="&gt;&gt;txtMemo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmbProfile.ZOrder" xml:space="preserve">
-    <value>24</value>
+  <data name="&gt;&gt;txtMemo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtMemo.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="numMaxAutosave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 200</value>
+  </data>
+  <data name="numMaxAutosave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 23</value>
+  </data>
+  <data name="numMaxAutosave.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;numMaxAutosave.Name" xml:space="preserve">
+    <value>numMaxAutosave</value>
+  </data>
+  <data name="&gt;&gt;numMaxAutosave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxAutosave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;numMaxAutosave.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lblMaxAutosave.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMaxAutosave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 202</value>
+  </data>
+  <data name="lblMaxAutosave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="lblMaxAutosave.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblMaxAutosave.Text" xml:space="preserve">
+    <value>Max Autosaves</value>
+  </data>
+  <data name="&gt;&gt;lblMaxAutosave.Name" xml:space="preserve">
+    <value>lblMaxAutosave</value>
+  </data>
+  <data name="&gt;&gt;lblMaxAutosave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMaxAutosave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblMaxAutosave.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lblBackupFolderPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBackupFolderPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 18</value>
+  </data>
+  <data name="lblBackupFolderPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 15</value>
+  </data>
+  <data name="lblBackupFolderPath.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblBackupFolderPath.Text" xml:space="preserve">
+    <value>Backup Folder</value>
+  </data>
+  <data name="&gt;&gt;lblBackupFolderPath.Name" xml:space="preserve">
+    <value>lblBackupFolderPath</value>
+  </data>
+  <data name="&gt;&gt;lblBackupFolderPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBackupFolderPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBackupFolderPath.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="cmbSavename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 186</value>
+  </data>
+  <data name="cmbSavename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="cmbSavename.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cmbSavename.Name" xml:space="preserve">
+    <value>cmbSavename</value>
+  </data>
+  <data name="&gt;&gt;cmbSavename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSavename.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbSavename.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblSavename.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSavename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 189</value>
+  </data>
+  <data name="lblSavename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
+  </data>
+  <data name="lblSavename.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblSavename.Text" xml:space="preserve">
+    <value>Save Name</value>
+  </data>
+  <data name="&gt;&gt;lblSavename.Name" xml:space="preserve">
+    <value>lblSavename</value>
+  </data>
+  <data name="&gt;&gt;lblSavename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSavename.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSavename.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="cmbSaveprofile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 147</value>
+  </data>
+  <data name="cmbSaveprofile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="cmbSaveprofile.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;cmbSaveprofile.Name" xml:space="preserve">
+    <value>cmbSaveprofile</value>
+  </data>
+  <data name="&gt;&gt;cmbSaveprofile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSaveprofile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbSaveprofile.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblSaveprofile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSaveprofile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 150</value>
+  </data>
+  <data name="lblSaveprofile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 15</value>
+  </data>
+  <data name="lblSaveprofile.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lblSaveprofile.Text" xml:space="preserve">
+    <value>Destination Profile</value>
+  </data>
+  <data name="&gt;&gt;lblSaveprofile.Name" xml:space="preserve">
+    <value>lblSaveprofile</value>
+  </data>
+  <data name="&gt;&gt;lblSaveprofile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSaveprofile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSaveprofile.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btnDeleteSavedata.Location" type="System.Drawing.Point, System.Drawing">
+    <value>444, 543</value>
+  </data>
+  <data name="btnDeleteSavedata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnDeleteSavedata.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="btnDeleteSavedata.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteSavedata.Name" xml:space="preserve">
+    <value>btnDeleteSavedata</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteSavedata.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteSavedata.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteSavedata.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="btnLordSavedata.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 543</value>
+  </data>
+  <data name="btnLordSavedata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnLordSavedata.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnLordSavedata.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="&gt;&gt;btnLordSavedata.Name" xml:space="preserve">
+    <value>btnLordSavedata</value>
+  </data>
+  <data name="&gt;&gt;btnLordSavedata.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLordSavedata.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnLordSavedata.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btnDeleteProfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 280</value>
+  </data>
+  <data name="btnDeleteProfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="btnDeleteProfile.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnDeleteProfile.Text" xml:space="preserve">
+    <value>Profile Delete</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteProfile.Name" xml:space="preserve">
+    <value>btnDeleteProfile</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteProfile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteProfile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteProfile.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="cmbAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 106</value>
+  </data>
+  <data name="cmbAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 23</value>
+  </data>
+  <data name="cmbAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;cmbAccount.Name" xml:space="preserve">
+    <value>cmbAccount</value>
+  </data>
+  <data name="&gt;&gt;cmbAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbAccount.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblAccount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 109</value>
+  </data>
+  <data name="lblAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="lblAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lblAccount.Text" xml:space="preserve">
+    <value>Steam Account</value>
+  </data>
+  <data name="lblAccount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.Name" xml:space="preserve">
+    <value>lblAccount</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnChangeName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 543</value>
+  </data>
+  <data name="btnChangeName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 23</value>
+  </data>
+  <data name="btnChangeName.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="btnChangeName.Text" xml:space="preserve">
+    <value>Name Change</value>
+  </data>
+  <data name="&gt;&gt;btnChangeName.Name" xml:space="preserve">
+    <value>btnChangeName</value>
+  </data>
+  <data name="&gt;&gt;btnChangeName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnChangeName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnChangeName.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmbGame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 69</value>
+  </data>
+  <data name="cmbGame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 23</value>
+  </data>
+  <data name="cmbGame.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.Name" xml:space="preserve">
+    <value>cmbGame</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbGame.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblGame.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 72</value>
+  </data>
+  <data name="lblGame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 15</value>
+  </data>
+  <data name="lblGame.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblGame.Text" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="&gt;&gt;lblGame.Name" xml:space="preserve">
+    <value>lblGame</value>
+  </data>
+  <data name="&gt;&gt;lblGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGame.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGame.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblBackupFolderPathDisplay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBackupFolderPathDisplay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="lblBackupFolderPathDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 41</value>
+  </data>
+  <data name="lblBackupFolderPathDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 15</value>
+  </data>
+  <data name="lblBackupFolderPathDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblBackupFolderPathDisplay.Text" xml:space="preserve">
+    <value>BackupFolderPathDisplay</value>
+  </data>
+  <data name="&gt;&gt;lblBackupFolderPathDisplay.Name" xml:space="preserve">
+    <value>lblBackupFolderPathDisplay</value>
   </data>
   <data name="&gt;&gt;lblBackupFolderPathDisplay.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -417,219 +766,212 @@
   <data name="&gt;&gt;lblBackupFolderPathDisplay.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="numBackupInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 23</value>
-  </data>
-  <data name="lblProfile.Text" xml:space="preserve">
-    <value>Profile</value>
-  </data>
-  <data name="&gt;&gt;chkSelectLevel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numBackupInterval.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="lblGame.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 72</value>
-  </data>
-  <data name="&gt;&gt;lblProfile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblCurrentLocation.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="numMaxAutosave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 23</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormBackupApp</value>
-  </data>
-  <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 225</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtMemo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 214</value>
-  </data>
-  <data name="&gt;&gt;txtSelectedBackupFolderPath.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;chkAutoBackup.Name" xml:space="preserve">
-    <value>chkAutoBackup</value>
-  </data>
-  <data name="&gt;&gt;txtMemo.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;btnSelectBackupFolder.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblGame.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblGame.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 15</value>
-  </data>
-  <data name="txtMemo.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtMemo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 322</value>
-  </data>
-  <data name="lstSavedata.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;numMaxAutosave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDeleteProfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 23</value>
-  </data>
-  <data name="cmbProfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 23</value>
-  </data>
-  <data name="&gt;&gt;cmbAccount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSaveprofile.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="cmbSavename.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="lblBackupFolderPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 15</value>
-  </data>
-  <data name="btnLordSavedata.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="&gt;&gt;cmbAccount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cmbProfile.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblSaveprofile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbSavename.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblCompletedLevelsCount.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lstSavedata.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="lblSavename.Text" xml:space="preserve">
-    <value>Save Name</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocation.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lstSavedata.Size" type="System.Drawing.Size, System.Drawing">
-    <value>507, 214</value>
-  </data>
-  <data name="&gt;&gt;cmbAccount.Name" xml:space="preserve">
-    <value>cmbAccount</value>
-  </data>
-  <data name="cmbSaveprofile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="lblBackupInterval.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblBackupFolderPath.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCurrentLocationDisplay.Text" xml:space="preserve">
-    <value>CurrentLocation</value>
-  </data>
-  <data name="&gt;&gt;lblBackupFolderPathDisplay.Name" xml:space="preserve">
-    <value>lblBackupFolderPathDisplay</value>
-  </data>
-  <data name="lblCurrentLocation.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteProfile.Name" xml:space="preserve">
-    <value>btnDeleteProfile</value>
-  </data>
-  <data name="&gt;&gt;cmbAccount.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;lblBackupFolderPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnSelectBackupFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblSaveprofile.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="numMaxAutosave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 200</value>
-  </data>
-  <data name="&gt;&gt;chkAutoBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="numMaxAutosave.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocationDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblBackupFolderPathDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 41</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FromGames SaveBackup App</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocationDisplay.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnChangeName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 23</value>
-  </data>
-  <data name="lblGame.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="lblBackupInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 15</value>
-  </data>
-  <data name="lblCompletedLevels.Text" xml:space="preserve">
-    <value>Completed Levels :</value>
-  </data>
-  <data name="lblCurrentLocationDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 15</value>
-  </data>
-  <data name="&gt;&gt;cmbSaveprofile.Name" xml:space="preserve">
-    <value>cmbSaveprofile</value>
-  </data>
-  <data name="&gt;&gt;cmbGame.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnBackupFolderOpen.Name" xml:space="preserve">
-    <value>btnBackupFolderOpen</value>
+  <data name="&gt;&gt;lblBackupFolderPathDisplay.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="lblCompletedLevels.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="btnDeleteSavedata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 543</value>
+  <data name="lblCompletedLevels.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 216</value>
+  </data>
+  <data name="lblCompletedLevels.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 15</value>
+  </data>
+  <data name="lblCompletedLevels.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblCompletedLevels.Text" xml:space="preserve">
+    <value>Completed Levels :</value>
+  </data>
+  <data name="lblCompletedLevels.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevels.Name" xml:space="preserve">
+    <value>lblCompletedLevels</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevels.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevels.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevels.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblCompletedLevelsCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCompletedLevelsCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 216</value>
+  </data>
+  <data name="lblCompletedLevelsCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 15</value>
+  </data>
+  <data name="lblCompletedLevelsCount.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lblCompletedLevelsCount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCompletedLevelsCount.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevelsCount.Name" xml:space="preserve">
+    <value>lblCompletedLevelsCount</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevelsCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevelsCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCompletedLevelsCount.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblCurrentLocation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCurrentLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 233</value>
+  </data>
+  <data name="lblCurrentLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 15</value>
+  </data>
+  <data name="lblCurrentLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lblCurrentLocation.Text" xml:space="preserve">
+    <value>Current location :</value>
+  </data>
+  <data name="lblCurrentLocation.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocation.Name" xml:space="preserve">
+    <value>lblCurrentLocation</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocation.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblCurrentLocationDisplay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCurrentLocationDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 233</value>
+  </data>
+  <data name="lblCurrentLocationDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 15</value>
+  </data>
+  <data name="lblCurrentLocationDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="lblCurrentLocationDisplay.Text" xml:space="preserve">
+    <value>CurrentLocation</value>
+  </data>
+  <data name="lblCurrentLocationDisplay.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocationDisplay.Name" xml:space="preserve">
+    <value>lblCurrentLocationDisplay</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocationDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocationDisplay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentLocationDisplay.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnBackupFolderOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>696, 15</value>
+  </data>
+  <data name="btnBackupFolderOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnBackupFolderOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="btnBackupFolderOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="&gt;&gt;btnBackupFolderOpen.Name" xml:space="preserve">
+    <value>btnBackupFolderOpen</value>
+  </data>
+  <data name="&gt;&gt;btnBackupFolderOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBackupFolderOpen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnBackupFolderOpen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkSelectLevel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSelectLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 545</value>
+  </data>
+  <data name="chkSelectLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 19</value>
+  </data>
+  <data name="chkSelectLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
   <data name="chkSelectLevel.Text" xml:space="preserve">
     <value>Select Level</value>
   </data>
-  <data name="btnDeleteSavedata.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;chkSelectLevel.Name" xml:space="preserve">
+    <value>chkSelectLevel</value>
+  </data>
+  <data name="&gt;&gt;chkSelectLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSelectLevel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkSelectLevel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnUpdateSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 106</value>
+  </data>
+  <data name="btnUpdateSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="btnUpdateSave.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
-  <data name="&gt;&gt;lblProfile.ZOrder" xml:space="preserve">
-    <value>25</value>
+  <data name="btnUpdateSave.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateSave.Name" xml:space="preserve">
+    <value>btnUpdateSave</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateSave.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>794, 576</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -887,340 +1229,22 @@
         AAD///4D//8AAP///gf//wAA////B///AAA=
 </value>
   </data>
-  <data name="&gt;&gt;lblCompletedLevelsCount.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;cmbProfile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnChangeName.Text" xml:space="preserve">
-    <value>Name Change</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocationDisplay.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocationDisplay.Name" xml:space="preserve">
-    <value>lblCurrentLocationDisplay</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FromGames SaveBackup App</value>
   </data>
   <data name="&gt;&gt;timerBackup.Name" xml:space="preserve">
     <value>timerBackup</value>
   </data>
-  <data name="lblCompletedLevelsCount.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="&gt;&gt;timerBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmbSaveprofile.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormBackupApp</value>
   </data>
-  <data name="lblProfile.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnDeleteProfile.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="lblSavename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 189</value>
-  </data>
-  <data name="btnBackupFolderOpen.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="lblSavename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 15</value>
-  </data>
-  <data name="lblCompletedLevelsCount.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btnBackupFolderOpen.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnBackup.Text" xml:space="preserve">
-    <value>Backup</value>
-  </data>
-  <data name="&gt;&gt;lblCompletedLevels.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmbSaveprofile.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;txtSelectedBackupFolderPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblCurrentLocationDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 233</value>
-  </data>
-  <data name="btnChangeName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 543</value>
-  </data>
-  <data name="chkSelectLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 19</value>
-  </data>
-  <data name="lblMaxAutosave.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="btnBackupFolderOpen.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="chkSelectLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="chkSelectLevel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnChangeName.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="lblAccount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lstSavedata.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmbGame.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="lblBackupInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 173</value>
-  </data>
-  <data name="lblBackupFolderPathDisplay.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblProfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 15</value>
-  </data>
-  <data name="cmbSavename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="txtSelectedBackupFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 15</value>
-  </data>
-  <data name="lblMaxAutosave.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblSavename.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;cmbGame.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lblMaxAutosave.Name" xml:space="preserve">
-    <value>lblMaxAutosave</value>
-  </data>
-  <data name="&gt;&gt;lblMaxAutosave.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblCompletedLevels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 216</value>
-  </data>
-  <data name="lblMaxAutosave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 202</value>
-  </data>
-  <data name="&gt;&gt;txtMemo.Name" xml:space="preserve">
-    <value>txtMemo</value>
-  </data>
-  <data name="&gt;&gt;lblCompletedLevels.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnLordSavedata.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtMemo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmbGame.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 69</value>
-  </data>
-  <data name="&gt;&gt;btnChangeName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSavename.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblProfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 284</value>
-  </data>
-  <data name="lblCurrentLocationDisplay.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSaveprofile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 150</value>
-  </data>
-  <data name="&gt;&gt;btnChangeName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cmbSavename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblBackupInterval.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblSavename.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;btnSelectBackupFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblCurrentLocation.Text" xml:space="preserve">
-    <value>Current location :</value>
-  </data>
-  <data name="&gt;&gt;cmbSaveprofile.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblCompletedLevelsCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbSaveprofile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkSelectLevel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSaveprofile.Name" xml:space="preserve">
-    <value>lblSaveprofile</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblCompletedLevelsCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 216</value>
-  </data>
-  <data name="chkSelectLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 545</value>
-  </data>
-  <data name="&gt;&gt;lblBackupFolderPathDisplay.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 15</value>
-  </data>
-  <data name="&gt;&gt;cmbSavename.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;lblGame.Name" xml:space="preserve">
-    <value>lblGame</value>
-  </data>
-  <data name="chkAutoBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 19</value>
-  </data>
-  <data name="cmbAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 106</value>
-  </data>
-  <data name="&gt;&gt;numBackupInterval.Name" xml:space="preserve">
-    <value>numBackupInterval</value>
-  </data>
-  <data name="&gt;&gt;chkSelectLevel.Name" xml:space="preserve">
-    <value>chkSelectLevel</value>
-  </data>
-  <data name="btnDeleteSavedata.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="lblCurrentLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 233</value>
-  </data>
-  <data name="cmbAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 23</value>
-  </data>
-  <data name="chkAutoBackup.Text" xml:space="preserve">
-    <value>Enable Autosave</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteSavedata.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>794, 576</value>
-  </data>
-  <data name="&gt;&gt;btnBackupFolderOpen.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkSelectLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtSelectedBackupFolderPath.Name" xml:space="preserve">
-    <value>txtSelectedBackupFolderPath</value>
-  </data>
-  <data name="lblBackupFolderPathDisplay.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="lblCompletedLevelsCount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblBackupFolderPath.Name" xml:space="preserve">
-    <value>lblBackupFolderPath</value>
-  </data>
-  <data name="cmbProfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 280</value>
-  </data>
-  <data name="lblAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 109</value>
-  </data>
-  <data name="cmbSavename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 186</value>
-  </data>
-  <data name="lblBackupFolderPathDisplay.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;txtSelectedBackupFolderPath.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblCompletedLevels.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblBackupInterval.Name" xml:space="preserve">
-    <value>lblBackupInterval</value>
-  </data>
-  <data name="&gt;&gt;lblProfile.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblBackupFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 18</value>
-  </data>
-  <data name="&gt;&gt;lblBackupInterval.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;cmbSavename.Name" xml:space="preserve">
-    <value>cmbSavename</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;lblSavename.Name" xml:space="preserve">
-    <value>lblSavename</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteSavedata.Name" xml:space="preserve">
-    <value>btnDeleteSavedata</value>
-  </data>
-  <data name="cmbGame.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 23</value>
-  </data>
-  <data name="lblCompletedLevels.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lblGame.Text" xml:space="preserve">
-    <value>Game</value>
-  </data>
-  <data name="btnChangeName.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="btnDeleteProfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 280</value>
-  </data>
-  <data name="btnLordSavedata.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;lblProfile.Name" xml:space="preserve">
-    <value>lblProfile</value>
-  </data>
-  <metadata name="timerBackup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

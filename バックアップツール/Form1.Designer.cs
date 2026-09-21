@@ -58,6 +58,7 @@
             lblCurrentLocationDisplay = new Label();
             btnBackupFolderOpen = new Button();
             chkSelectLevel = new CheckBox();
+            btnUpdateSave = new Button();
             ((System.ComponentModel.ISupportInitialize)numBackupInterval).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numMaxAutosave).BeginInit();
             SuspendLayout();
@@ -114,16 +115,16 @@
             // 
             // cmbProfile
             // 
-            resources.ApplyResources(cmbProfile, "cmbProfile");
             cmbProfile.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbProfile.FormattingEnabled = true;
+            resources.ApplyResources(cmbProfile, "cmbProfile");
             cmbProfile.Name = "cmbProfile";
             cmbProfile.SelectedIndexChanged += cmbProfile_SelectedIndexChanged;
             // 
             // lstSavedata
             // 
-            resources.ApplyResources(lstSavedata, "lstSavedata");
             lstSavedata.FormattingEnabled = true;
+            resources.ApplyResources(lstSavedata, "lstSavedata");
             lstSavedata.Name = "lstSavedata";
             lstSavedata.SelectedIndexChanged += lstSavedata_SelectedIndexChanged;
             lstSavedata.DoubleClick += lstSavedata_DoubleClick;
@@ -152,8 +153,8 @@
             // 
             // cmbSavename
             // 
-            resources.ApplyResources(cmbSavename, "cmbSavename");
             cmbSavename.FormattingEnabled = true;
+            resources.ApplyResources(cmbSavename, "cmbSavename");
             cmbSavename.Name = "cmbSavename";
             // 
             // lblSavename
@@ -163,8 +164,8 @@
             // 
             // cmbSaveprofile
             // 
-            resources.ApplyResources(cmbSaveprofile, "cmbSaveprofile");
             cmbSaveprofile.FormattingEnabled = true;
+            resources.ApplyResources(cmbSaveprofile, "cmbSaveprofile");
             cmbSaveprofile.Name = "cmbSaveprofile";
             cmbSaveprofile.SelectedIndexChanged += cmbSaveprofile_SelectedIndexChanged;
             cmbSaveprofile.KeyPress += cmbSaveprofile_KeyPress;
@@ -197,9 +198,9 @@
             // 
             // cmbAccount
             // 
-            resources.ApplyResources(cmbAccount, "cmbAccount");
             cmbAccount.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbAccount.FormattingEnabled = true;
+            resources.ApplyResources(cmbAccount, "cmbAccount");
             cmbAccount.Name = "cmbAccount";
             cmbAccount.SelectedIndexChanged += cmbAccount_SelectedIndexChanged;
             // 
@@ -217,9 +218,9 @@
             // 
             // cmbGame
             // 
-            resources.ApplyResources(cmbGame, "cmbGame");
             cmbGame.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbGame.FormattingEnabled = true;
+            resources.ApplyResources(cmbGame, "cmbGame");
             cmbGame.Name = "cmbGame";
             cmbGame.SelectedIndexChanged += cmbGame_SelectedIndexChanged;
             // 
@@ -266,10 +267,18 @@
             chkSelectLevel.Name = "chkSelectLevel";
             chkSelectLevel.UseVisualStyleBackColor = true;
             // 
+            // btnUpdateSave
+            // 
+            resources.ApplyResources(btnUpdateSave, "btnUpdateSave");
+            btnUpdateSave.Name = "btnUpdateSave";
+            btnUpdateSave.UseVisualStyleBackColor = true;
+            btnUpdateSave.Click += btnUpdateSave_Click;
+            // 
             // FormBackupApp
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnUpdateSave);
             Controls.Add(chkSelectLevel);
             Controls.Add(btnBackupFolderOpen);
             Controls.Add(lblCurrentLocationDisplay);
@@ -347,5 +356,6 @@
         private Label lblCurrentLocationDisplay;
         private Button btnBackupFolderOpen;
         private CheckBox chkSelectLevel;
+        private Button btnUpdateSave;
     }
 }

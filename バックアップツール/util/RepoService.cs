@@ -121,5 +121,12 @@
             }
             return restoreCount;
         }
+
+        internal static void SetLabel(string saveData, Label lblCompletedLevelsCount, Label lblCurrentLocationDisplay) {
+            string saveFolderPath = Path.Combine(AppConstants.SavePathRepo, saveData);
+            var (completedLevel, currentLocation) = GetLevelAndLocation(saveFolderPath);
+            lblCompletedLevelsCount.Text = completedLevel;
+            lblCurrentLocationDisplay.Text = currentLocation;
+        }
     }
 }

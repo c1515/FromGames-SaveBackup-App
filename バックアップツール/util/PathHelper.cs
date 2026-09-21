@@ -112,11 +112,7 @@
         }
 
         internal static string[] GetSubFolders(string specifiedFolder) {
-            string[] subFolders = FileSystemHelper.GetDirectories(specifiedFolder);
-            if (subFolders.Length == 0) {
-                MessageHepler.Error(Properties.Resources.Error_NotfoundSavefolder);
-            }
-            return subFolders;
+           return FileSystemHelper.GetDirectories(specifiedFolder);
         }
     }
 }

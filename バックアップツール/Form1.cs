@@ -7,6 +7,7 @@ namespace DS3BackupApp {
         private bool IsLoading = true;
         private bool IsAccuountChanged = false;
         private bool IsBackupPathChanged = false;
+        private bool IsRepoSelected => cmbGame.Text.Trim() == AppConstants.Repo;
 
         public FormBackupApp() {
             InitializeComponent();
@@ -357,10 +358,7 @@ namespace DS3BackupApp {
             }
 
             if (cmbGame.Text.Trim() == AppConstants.Repo) {
-                string saveFolderPath = Path.Combine(AppConstants.SavePathRepo, cmbAccount.Text.Trim());
-                var (completedLevel, currentLocation) = RepoService.GetLevelAndLocation(saveFolderPath);
-                lblCompletedLevelsCount.Text = completedLevel;
-                lblCurrentLocationDisplay.Text = currentLocation;
+                RepoService.SetLabel(cmbAccount.Text.Trim(), lblCompletedLevelsCount, lblCurrentLocationDisplay);
             }
         }
 
@@ -462,15 +460,24 @@ namespace DS3BackupApp {
 
             string[] subFolders = PathHelper.GetSubFolders(gameFolder);
             if (subFolders.Length == 0) {
-                ToggleElement(false);
-                return;
+                if (!IsRepoSelected) {
+                    MessageHepler.Error(Properties.Resources.Error_NotfoundSavefolder);
+                    ToggleElement(false);
+                    return;
+                } else {
+                    lblBackupFolderPathDisplay.Text = Path.Combine(txtSelectedBackupFolderPath.Text.Trim(), AppConstants.TopBackupFolder, cmbGame.Text.Trim());
+                    cmbAccount.Items.Clear();
+                    ProfileService.SetProfile(lblBackupFolderPathDisplay.Text.Trim(), cmbSaveprofile, cmbProfile, IsLoading);
+                    btnBackup.Enabled = false;
+                    chkAutoBackup.Enabled = false;
+
+                }
+            } else {
+                saveFolderPath = subFolders[0];
+                AccountHelper.SetAccount(subFolders, cmbAccount, gameFolder);
+                ToggleElement(true);
             }
 
-            ToggleElement(true);
-            saveFolderPath = subFolders[0];
-            AccountHelper.SetAccount(subFolders, cmbAccount, gameFolder);
-
-            // ここで見た目をゲームに応じて動的に変更する
             UpdateAppearanceForGame(cmbGame.Text.Trim());
         }
 
@@ -483,6 +490,7 @@ namespace DS3BackupApp {
             lblCurrentLocationDisplay.Visible = isRepo;
             lblAccount.Text = isRepo ? Properties.Resources.AccountLabel_BackupTarget : Properties.Resources.AccountLabel_Account;
             chkSelectLevel.Visible = isRepo;
+            btnUpdateSave.Visible = isRepo;
 
             // 複数コントロールの更新をまとめて行う場合はレイアウトを一時停止してから再開
             this.SuspendLayout();
@@ -502,6 +510,7 @@ namespace DS3BackupApp {
             cmbProfile.Enabled = isEnabled;
             txtSelectedBackupFolderPath.Enabled = isEnabled;
             cmbAccount.Enabled = isEnabled;
+            btnUpdateSave.Enabled = isEnabled;
         }
 
         private void btnBackupFolderOpen_Click(object sender, EventArgs e) {
@@ -523,6 +532,27 @@ namespace DS3BackupApp {
             } catch (Exception ex) {
                 MessageBox.Show(this, $"フォルダを開く際にエラーが発生しました:\n{ex.Message}", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnUpdateSave_Click(object sender, EventArgs e) {
+            string gameFolder = PathHelper.GetGamePath(cmbGame.Text.Trim());
+            string[] subFolders = PathHelper.GetSubFolders(gameFolder);
+            if (subFolders.Length == 0) {
+                lblBackupFolderPathDisplay.Text = Path.Combine(txtSelectedBackupFolderPath.Text.Trim(), AppConstants.TopBackupFolder, cmbGame.Text.Trim());
+                cmbAccount.Items.Clear();
+                ProfileService.SetProfile(lblBackupFolderPathDisplay.Text.Trim(), cmbSaveprofile, cmbProfile, IsLoading);
+                btnBackup.Enabled = false;
+                chkAutoBackup.Enabled = false;
+            } else {
+                if (cmbAccount.Items.Count > 0) {
+                    RepoService.SetLabel(cmbAccount.Text.Trim(), lblCompletedLevelsCount, lblCurrentLocationDisplay);
+                } else {
+                    saveFolderPath = subFolders[0];
+                    AccountHelper.SetAccount(subFolders, cmbAccount, gameFolder);
+                    ToggleElement(true);
+                }
+            }
+
         }
     }
 }
