@@ -148,11 +148,13 @@
   </data>
   <data name="Error_NotfoundSavefolder" xml:space="preserve">
     <value>Could not find the folder to save the save data.
-Please start the selected game and create the save data.</value>
+Please start the selected game and create the save data.
+For REPO, please play through the single-player mode to create your save data.</value>
   </data>
   <data name="Error_NotfoundSavefolderForAuto" xml:space="preserve">
     <value>Automatic backup could not be performed because the folder where the saved data was saved could not be found.
-Please start the game and create the save data.</value>
+Please start the game and create the save data.
+For REPO, please play through the single-player mode to create your save data.</value>
   </data>
   <data name="Error_MemoReadEx" xml:space="preserve">
     <value>An error occurred while loading the note.
